@@ -22,7 +22,7 @@ function getGitHubRepos(username) {
             data.forEach(obj =>
                 $('.repo-list').append(`<li><a href='${obj.svn_url}'>${obj.name}</a></li>`)
                 );
-                $('username').text(`${username}`)
+                $('.username').text(`${username}`)
                 $('.results').removeClass('hidden');
         })
         .catch(error => {
